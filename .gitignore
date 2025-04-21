@@ -1,1 +1,3 @@
-fastapienv/
+/fastapienv/
+
+__pycache__/
