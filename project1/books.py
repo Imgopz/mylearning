@@ -77,3 +77,19 @@ async def delete_book(book_title: str):
         if BOOKS[i].get('title').casefold() == book_title.casefold():
             BOOKS.pop(i)
             break
+
+
+
+# FastAPI is now compatible with both Pydantic v1 and Pydantic v2.
+
+# Based on how new the version of FastAPI you are using, there could be small method name changes.
+
+
+
+# The three biggest are:
+
+# .dict() function is now renamed to .model_dump()
+
+# schema_extra function within a Config class is now renamed to json_schema_extra
+
+# Optional variables need a =None example: id: Optional[int] = None
